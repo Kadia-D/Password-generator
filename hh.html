@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <Title>Form</Title>
         <script src = "hello.js"></script>
     </head>
+    <body>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" >
+            <button type = "submit" id = "newp" onclick = "generatePassword">Generate Random Password</button>
+    
+            <button type="submit">Login</button>
+        </form>
+    </body>
 </html>
