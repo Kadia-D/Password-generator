@@ -31,12 +31,16 @@ function generatePassword(length, includeLowercase, includeNumbers, includeSymbo
     return password;
 }
 
-const passwordLength = 16;
-const includeLowercase = true;
-const includeUppercase = true;
-const includeNumbers = true;
-const includeSymbols = true;
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("newp").addEventListener("click", function () {
+        const passwordLength = 16;
+        const includeLowercase = true;
+        const includeUppercase = true;
+        const includeNumbers = true;
+        const includeSymbols = true;
 
-const password = generatePassword(passwordLength, includeLowercase, includeNumbers, includeSymbols, includeUppercase);
+        const password = generatePassword(passwordLength, includeLowercase, includeNumbers, includeSymbols, includeUppercase);
 
-console.log(password);
+        document.getElementById("password").value = password;
+    });
+});
