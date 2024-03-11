@@ -3,17 +3,20 @@
     <head>
         <Title>Form</Title>
         <script src = "hello.js"></script>
+        <link rel = "stylesheet" href = "styles.css">
     </head>
     <body>
+        
         <form>
-            <label for="username">Username:</label>
+            <label for="username" >Username:</label>
             <input type="text" id="username" name="username" required>
     
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" >
             <button type = "submit" id = "newp" onclick = "generatePassword">Generate Random Password</button>
     
-            <button type="submit">Login</button>
+            <button type="submit" class = "login">Sign up</button>
         </form>
+      
     </body>
 </html>

@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(179, 8, 179, 0.3);
+}
+
+form{
+ padding: 10px;
+}
+
+.login{
+    padding: 10px;
+    margin: 5px;
+    
+}
+
